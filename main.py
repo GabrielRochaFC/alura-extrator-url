@@ -12,7 +12,7 @@ parametro_buscado = 'quantidade'
 inicio_parametro = url_parametros.find(parametro_buscado)
 indice_inicial_valor = inicio_parametro + 1 + len(parametro_buscado)
 
-# Peganndo onde fica o final do valor
+# Pegando onde fica o final do valor
 indice_e_comercial = url_parametros.find('&', indice_inicial_valor)
 if indice_e_comercial == -1:
     valor = url_parametros[indice_inicial_valor:]
